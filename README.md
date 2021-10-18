@@ -1,1 +1,8 @@
 # CS-305
+
+Artemis Financial is an insurance consulting firm. Artemis was planning a new software release and tasked me with advising them on security vulnerabilities in their code.
+While I did encounter some difficulties in this task, I am particularly proud of my static testing of the code. Integrating the Maven security check, and then comparing the results with the CVE database gave me the context I needed to identify the greatest risks to Artemis and determine which parts of the software need to be modified or updated. Actually implementing these changes in the code would prove to be a challenge that tested the limits of my capabilities.
+Thanks to this assignment, I now have a clearer idea of the steps I would take in adding layers of security to a program. First identifying them with both a static test and a manual review of the code, then going through and implementing them, starting with the most severe risks such as restricting access to sensitive data and going down to limiting file sizes and searches to prevent a simpler denial of service.
+This is a cyclical process. After refactoring the code, the same tests and reviews should be performed to ensure that the existing vulnerabilities have been patched, and new vulnerabilities haven't been found or created.
+In addition to Maven and the CVE database I mentioned earlier, my work for Artemis Financial has also introduced me to the keytool. This is a helpful resource for creating certificates that can be used to verify security keys of encrypted strings of characters.
+In this repository, I have added a vulnerability report as an example of my work. Out of the areas of the assignment, I think the mitigation plan at the end best shows off what I have learned over the course of this project.
